@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Hi, I'm Md Asif</h1>
+    <img src="images/profile.jpg" alt="Md Asif" class="profile-pic">
+    <br>
+    <p>Front-End Developer | BCA Student</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate front-end developer with a keen interest in creating beautiful and functional web
+      applications. Currently pursuing my BCA, I love to explore new technologies and improve my skills.</p>
+    <h3>Skills</h3>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Basic JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <h3><a href="restaurant.html">🍽️ Restaurant Website</a></h3>
+      <p><em>Coming Soon:</em> A stylish restaurant homepage using HTML and CSS.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out if you have any questions or opportunities!</p>
+    <ul>
+      <li>Email: <a href="mailto:myteam404@gmail.com">myteam404@gmail.com</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/pool_of_dead82" target="_blank">@pool_of_dead82</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/mdasif65" target="_blank">Md Asif</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/md-asif-488a92258" target="_blank">Md Asif</a></li>
+      <li>GitHub: <a href="https://github.com/asif65-cloud" target="_blank">asif65-cloud</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Md Asif. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Cursor Script -->
+  <script>
+    const cursor = document.querySelector(".cursor");
+
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.pageX + "px";
+      cursor.style.top = e.pageY + "px";
+    });
+
+    document.addEventListener("mousedown", () => {
+      cursor.style.transform = "scale(0.6)";
+    });
+
+    document.addEventListener("mouseup", () => {
+      cursor.style.transform = "scale(1)";
+    });
+  </script>
+</body>
+
+</html>
